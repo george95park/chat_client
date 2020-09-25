@@ -1,0 +1,11 @@
+version: '3'
+networks:
+  gp-net:
+services:
+  envoy:
+    build: .
+    image: envoy:v1
+    ports:
+      - "10000:10000"
+    networks:
+      - gp-net

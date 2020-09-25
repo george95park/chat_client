@@ -1,3 +1,4 @@
+/*eslint-disable*/
 /**
  * @fileoverview gRPC-Web generated client stub for chat
  * @enhanceable
@@ -73,16 +74,16 @@ proto.chat.ChatServicePromiseClient =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.chat.ChatMessage,
+ *   !proto.chat.Connect,
  *   !proto.chat.ChatMessage>}
  */
 const methodDescriptor_ChatService_CreateStream = new grpc.web.MethodDescriptor(
   '/chat.ChatService/CreateStream',
   grpc.web.MethodType.SERVER_STREAMING,
-  proto.chat.ChatMessage,
+  proto.chat.Connect,
   proto.chat.ChatMessage,
   /**
-   * @param {!proto.chat.ChatMessage} request
+   * @param {!proto.chat.Connect} request
    * @return {!Uint8Array}
    */
   function(request) {
@@ -95,13 +96,13 @@ const methodDescriptor_ChatService_CreateStream = new grpc.web.MethodDescriptor(
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.chat.ChatMessage,
+ *   !proto.chat.Connect,
  *   !proto.chat.ChatMessage>}
  */
 const methodInfo_ChatService_CreateStream = new grpc.web.AbstractClientBase.MethodInfo(
   proto.chat.ChatMessage,
   /**
-   * @param {!proto.chat.ChatMessage} request
+   * @param {!proto.chat.Connect} request
    * @return {!Uint8Array}
    */
   function(request) {
@@ -112,7 +113,7 @@ const methodInfo_ChatService_CreateStream = new grpc.web.AbstractClientBase.Meth
 
 
 /**
- * @param {!proto.chat.ChatMessage} request The request proto
+ * @param {!proto.chat.Connect} request The request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
  * @return {!grpc.web.ClientReadableStream<!proto.chat.ChatMessage>}
@@ -129,7 +130,7 @@ proto.chat.ChatServiceClient.prototype.createStream =
 
 
 /**
- * @param {!proto.chat.ChatMessage} request The request proto
+ * @param {!proto.chat.Connect} request The request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
  * @return {!grpc.web.ClientReadableStream<!proto.chat.ChatMessage>}
@@ -226,4 +227,3 @@ proto.chat.ChatServicePromiseClient.prototype.broadcastMessage =
 
 
 module.exports = proto.chat;
-
