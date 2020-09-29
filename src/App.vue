@@ -62,14 +62,11 @@ export default {
     bottom: 0;
     width: 100%;
 }
-#fromInput {
-    width: 15%;
-}
 #sendBtn {
     width: 50px;
 }
 #msgInput {
-    width: calc(80% - 50px);
+    width: calc(95% - 50px);
 }
 
 </style>
